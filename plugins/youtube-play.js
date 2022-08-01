@@ -17,12 +17,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     ['Video', `${usedPrefix}ytv ${url} yes`]
   ], m, { asLocation: 1 })
 }
-handler.help = ['song', 'song2'].map(v => v + ' <search>')
+handler.help = ['play', 'play2'].map(v => v + ' <search>')
 handler.tags = ['downloader']
-handler.command = /^song2?$/i
+handler.command = /^play2?$/i
 
 handler.exp = 0
 handler.limit = false
 
 export default handler
-
